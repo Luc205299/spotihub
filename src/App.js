@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; 
+import logo from './logo.png';
+
 
 function App() {
+  const pageAuth = () => {
+    window.location.href = "redirect.html";
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div id="logo">
+        Spotyhub
+        <img src={logo} alt="Logo" className="logo" width="200" height="200" />
+      </div>
+      <h1 className="title">Discover a new way to listen to music with friends!</h1>
+      <button className="button" onClick={pageAuth}>Try it</button>
     </div>
   );
 }
