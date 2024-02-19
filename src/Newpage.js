@@ -1,12 +1,12 @@
 import React from 'react';
 
-function NewPage() {
+function Newpage() {
   return (
     <div>
-      <h1>New Page</h1>
-      <p>This is the content of the new page.</p>
+      <h1>Nouvelle Page</h1>
+      <p>C'est une nouvelle page dans notre application.</p>
     </div>
   );
 }
 
-export default NewPage;
+export default Newpage;
