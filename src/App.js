@@ -12,7 +12,7 @@ function App() {
       </div>
       <h1 className="title">Discover a new way to listen to music with friends!</h1>
       
-      <Link to="/newpage" className="button">Try it</Link>
+      <Link to="/auth" className="button">Try it</Link>
     </div>
   );
 }

@@ -1,0 +1,250 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #191414;
+    color: white;
+    margin: 0;
+    display: flex;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5%;
+    color: #1DB954;
+}
+
+h2 {
+    color: #1DB954;
+    font-size: 2em;
+    margin-bottom: 3%;
+    margin-bottom: 20px;
+}
+
+
+.top-lists {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.top-artists, .top-tracks {
+    flex-basis: 40%;
+}
+
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 18px;
+}
+
+/* Tableau Playlist -------------------------------------------------------------------------------------------------------------------*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+td {
+    padding: 10px;
+    border: 1px solid #beb5b5;
+  }
+  
+td:first-child {
+    font-weight: bold;
+  }
+  
+tr:nth-child(odd) {
+    background-color: #1db954;
+  }
+
+tr:nth-child(even){
+    background-color: #333533c5;
+}
+  
+/* SideBar ----------------------------------------------------------------------------------------------------------------------------*/
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    z-index: 1;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-right: 1%;
+
+}
+
+
+.sidebar a {
+    padding: 20px 20px 20px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #1DB954;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.logo {
+    width: 70%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.header-title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 980px) {
+    .sidebar {
+      width: 40%;
+    }
+  
+    .logo {
+      width: 50%;
+    }
+  
+    .header-title {
+      font-size: 1.2em;
+      margin-bottom: 10%;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 5%;
+    }
+  }
+
+@media only screen and (max-width: 420px) {
+  .sidebar {
+    width: 40%;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  .header-title {
+    font-size: 1.2em;
+    margin-bottom: 10%;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .sidebar {
+    width: 40%;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  .header-title {
+    font-size: 1.2em;
+    margin-bottom: 10%;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+}
+/*Bouton Select ---------------------------------------------------------------------------------------------------------------------- */
+
+select {
+    appearance: none;
+    background-color: #191414;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  select:hover {
+    border-color: #1db954;
+  }
+  
+  .top-artists select,
+  .top-tracks select {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+/*  Profile -------------------------------------------------------------------------------------------------------------------------*/
+
+#profile{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#displayName {
+  padding : 10px;
+}
+
+.profile-image {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+#avatar {
+  background-color: #1db954;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+/*---------------------------------------------*/
+
+button {
+  background-color: #1DB954;
+  font-family: Arial, sans-serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  display: inline-block;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+#playlist_hub {
+  display: grid; /* Utilisation d'une grille pour le positionnement */
+  place-items: center; /* Centrage horizontal et vertical */
+  height: 100vh; /* Ajout de cette ligne pour occuper toute la hauteur de la fenêtre */
+}
+
+.button-group {
+  padding: 10px;
+  background-color: #333533c5;
+  border-radius: 20px;
+
+}
